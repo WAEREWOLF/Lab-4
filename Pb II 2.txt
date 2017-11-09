@@ -1,0 +1,50 @@
+#include <iostream>
+#include <math.h>
+#include <cmath>
+#define PI 3,14159
+using namespace std;
+
+int function_1(int n,int x, int a, int b, int c,int d)
+   {
+       int y;
+       y=a*pow(x,2*n)+b*pow(x,2)+c*x+d;
+       return y;
+   }
+
+int function_2(int n,int x, int a, int b, int c,int d)
+   {
+       int y;
+       double argument;
+       argument=PI*c;
+       y=a*pow(x,2)+b*x+cos(argument);
+       return y;
+   }
+
+int main()
+{
+
+  int n;
+  int x;
+  int a;
+  int b;
+  int c;
+  int d;
+
+  cout<<"Input a value for: n= ";
+  cin>>n;
+  cout<<"Input a value for: x= ";
+  cin>>x;
+  cout<<"Input a value for: a= ";
+  cin>>a;
+  cout<<"Input a value for: b= ";
+  cin>>b;
+  cout<<"Input a value for: c= ";
+  cin>>c;
+  cout<<"Input a value for: d= ";
+  cin>>d;
+  cout<<"a) y= "<<function_1(n,x,a,b,c,d)<<endl;
+  cout<<"c) y= "<<function_2(n,x,a,b,c,d);
+
+
+    return 0;
+}

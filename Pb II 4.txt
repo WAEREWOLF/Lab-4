@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int FindMinMax(int arr[10], int min, int max)
+    {
+        for(int i=0; i<10; i++)
+            arr[i] = rand()%100;
+        min=arr[0];
+        max=arr[0];
+        for(int i;i<=10;i++)
+            {
+                if(arr[i]>max)
+                    max=arr[i];
+                if(arr[i]<min)
+                    min=arr[i];
+            }
+
+        return min;
+        return max;
+    }
+
+
+
+int main()
+{
+
+int a[10], t,b;
+cout<< FindMinMax(a[10],t,b);
+
+    return 0;
+}

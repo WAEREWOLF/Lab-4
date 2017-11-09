@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+//a)
+int sum(int x,int y,int z)
+     {
+         int result= x+y+z;
+         return result;
+     }
+
+//b)
+int multiply(int x,int y,int z)
+     {
+         int result= x*y*z;
+         return result;
+     }
+//c)
+int average(float x,float y,float z)
+  {
+      float Ma= (x+y+z)/3;
+      return Ma;
+  }
+int main()
+{
+    int a;
+    int b;
+    int c;
+    cout << "Input a value for the first number: ";
+    cin>>a;
+    cout<< "Input a value for the second number: ";
+    cin>>b;
+    cout << "Input a value for the third number: ";
+    cin>>c;
+    cout<<"a) The sum of this 3 numbers is : "<<sum(a,b,c)<<endl;
+    cout<<"b) The result of this 3 numbers multiplyed is: "<<multiply(a,b,c)<<endl;
+    cout<<"c) The average of this 3 numbers is: "<<average((float) a,(float) b,(float) c);
+    return 0;
+}

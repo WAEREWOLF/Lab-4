@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int hypotenuse(int x, int y)
+    {int hyp;
+     hyp= sqrt(pow(x,2)+pow(y,2));
+     return hyp;
+    }
+
+
+int main()
+{
+
+    int side_1;
+    int side_2;
+    cout<<"Input the first side of the triangle: ";
+    cin>>side_1;
+    cout<<"Input the second side of the triangle: ";
+    cin>>side_2;
+    cout<< "The hypotenuse is: "<<hypotenuse(side_1, side_2);
+    
+    
+
+
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    int i;
+    cout<<"a) ";
+    //a
+    for (i=2;i<=60;i=i+2)
+        cout <<i<<" ";
+    cout<<endl<<"b) ";
+    //b
+    i=2;
+    while(i<=60)
+         {cout<<i<<" ";
+             i=i+2;
+         }
+    cout<<endl<<"c) ";
+    //c
+    i=2;
+    do {
+            cout<<i<<" ";
+             i=i+2;
+         }
+    while (i<=60);
+
+
+    return 0;
+}
